@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Law Firm App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Law Firm Management System</h1>
+
+    <!-- FORM -->
+    <div class="form-box">
+      <input type="text" id="name" placeholder="Enter Name">
+      <input type="email" id="email" placeholder="Enter Email">
+      <button onclick="addUser()">Add User</button>
+    </div>
+
+    <hr>
+
+    <h2>Users List</h2>
+    <button onclick="loadUsers()">Load Users</button>
+
+    <table>
+      <thead>
+        <tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Action</th>
+</tr>
+      </thead>
+      <tbody id="userTable"></tbody>
+    </table>
+<hr>
+
+<h2>Case Management</h2>
+
+<input
+type="text"
+id="caseNumber"
+placeholder="Case Number">
+
+<input
+type="text"
+id="partyName"
+placeholder="Party Name">
+
+<input
+type="text"
+id="caseType"
+placeholder="Case Type">
+
+<button onclick="addCase()">
+Add Case
+</button>
+
+<button onclick="loadCases()">
+Load Cases
+</button>
+
+<br><br>
+
+<table border="1">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Case Number</th>
+<th>Party Name</th>
+<th>Case Type</th>
+
+</tr>
+
+</thead>
+
+<tbody id="caseTable">
+
+</tbody>
+
+</table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
